@@ -1,0 +1,27 @@
+.order-text {
+  font-family: Roboto;
+  font-size: 24px;
+  color: #616e7c;
+}
+
+.amountin-text {
+  font-family: Roboto;
+  color: #171f46;
+  font-size: 22px;
+}
+.cart-summary-container {
+  align-self: flex-end;
+}
+.checkout-btn {
+  width: 100%;
+  background-color: #0b69ff;
+  color: white;
+  font-family: Roboto;
+  font-size: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  border-radius: 9px;
+}
