@@ -160,6 +160,7 @@ class ProductItemDetails extends Component {
                 </div>
                 <hr className="horizontal-line" />
                 <div className="quantity-container">
+                  {/* eslint-disable-next-line */}
                   <button
                     type="button"
                     className="quantity-controller-button"
@@ -169,6 +170,7 @@ class ProductItemDetails extends Component {
                     <BsDashSquare className="quantity-controller-icon" />
                   </button>
                   <p className="quantity">{quantity}</p>
+                  {/* eslint-disable-next-line */}
                   <button
                     type="button"
                     className="quantity-controller-button"

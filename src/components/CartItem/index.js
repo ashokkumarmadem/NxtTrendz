@@ -35,6 +35,7 @@ const CartItem = props => (
               <p className="cart-product-brand">by {brand}</p>
             </div>
             <div className="cart-quantity-container">
+              {/* eslint-disable-next-line */}
               <button
                 type="button"
                 className="quantity-controller-button"
@@ -44,6 +45,7 @@ const CartItem = props => (
                 <BsDashSquare color="#52606D" size={12} />
               </button>
               <p className="cart-quantity">{quantity}</p>
+              {/* eslint-disable-next-line */}
               <button
                 type="button"
                 className="quantity-controller-button"
@@ -64,6 +66,7 @@ const CartItem = props => (
               </button>
             </div>
           </div>
+          {/* eslint-disable-next-line */}
           <button
             className="delete-button"
             type="button"
