@@ -24,16 +24,10 @@
   padding-bottom: 8px;
   border: none;
   border-radius: 9px;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
-.popup-content {
-  background-color: rgb(222, 222, 210);
-  height: 50vh;
-  width: 50vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 .select-payment-option {
   height: 40px;
   width: 80%;

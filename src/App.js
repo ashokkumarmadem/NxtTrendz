@@ -14,7 +14,22 @@ import './App.css'
 
 class App extends Component {
   state = {
-    cartList: [],
+    cartList: [
+      {
+        availability: 'In Stock',
+        brand: 'Phillips',
+        description:
+          'Cleverly designed, this compact hairdryer is easy to handle and lightweight. The ThermoProtect temperature setting provides the optimal hair drying rate while protecting your hair from overheating. An efficient hairdryer sets your hair dry in just a few seconds. It also comes with a rubber storage hook.',
+        id: 1001,
+        imageUrl:
+          'https://assets.ccbp.in/frontend/react-js/ecommerce/appliances-silver-hair-dryer.png',
+        price: 760,
+        rating: 3.9,
+        title: 'Hair Dryer',
+        totalReviews: 5463,
+        quantity: 1,
+      },
+    ],
   }
 
   removeAllCartItems = () => {

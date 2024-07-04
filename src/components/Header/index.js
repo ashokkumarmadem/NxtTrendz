@@ -12,6 +12,10 @@ const Header = props => {
     Cookies.remove('jwt_token')
     history.replace('/login')
   }
+  const {match} = props
+  const spHClass = match.path === '/' ? 'clor' : ''
+  const spPClass = match.path === '/products' ? 'clor' : ''
+  const spCClass = match.path === '/cart' ? 'clor' : ''
 
   const renderCartItemsCount = () => (
     <CartContext.Consumer>
@@ -65,19 +69,19 @@ const Header = props => {
           </Link>
           <ul className="nav-menu">
             <li className="nav-menu-item">
-              <Link to="/" className="nav-link">
+              <Link to="/" className={`nav-link ${spHClass}`}>
                 Home
               </Link>
             </li>
 
             <li className="nav-menu-item">
-              <Link to="/products" className="nav-link">
+              <Link to="/products" className={`nav-link ${spPClass}`}>
                 Products
               </Link>
             </li>
 
             <li className="nav-menu-item">
-              <Link to="/cart" className="nav-link">
+              <Link to="/cart" className={`nav-link ${spCClass}`}>
                 Cart
                 {renderCartItemsCount()}
               </Link>
